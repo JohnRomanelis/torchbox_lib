@@ -1,5 +1,5 @@
 # torchbox
-A small library containing tools (toolbox) that will help in the development of neural networks.
+A small library containing tools (like a toolbox) that will help in the development of neural networks.
 
 ## Installation 
 - Clone this repository
