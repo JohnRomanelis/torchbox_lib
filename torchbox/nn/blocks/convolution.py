@@ -26,9 +26,9 @@ class BasicConvolutionBlock(nn.Module):
 
 class ResidualBlock(nn.Module):
     """
-        Residual Layer has two roots.
-        1. net: conv (sith stride) -> batchnorm -> relu -> conv(stride=1) -> batchnorm
-        2. downsample : if stride : conv(with stride) -> batchnorm
+        Residual Layer has two branches.
+        1. net: conv (with stride) -> batchnorm -> relu -> conv(stride=1) -> batchnorm
+        2. downsample : if stride or out_channels!=in_channels : conv(with stride) -> batchnorm
 
         result = activation(net, downsample)
 
